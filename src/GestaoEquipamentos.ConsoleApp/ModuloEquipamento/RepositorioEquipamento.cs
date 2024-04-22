@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestaoEquipamentos.ConsoleApp
+namespace GestaoEquipamentos.ConsoleApp.ModuloEquipamento
 {
-    public class Acoes
+    public class RepositorioEquipamento
     {
         Equipamento[] arrayEquipamentos = new Equipamento[100];
 
-        public void RegistrarEquipamentos(Equipamento equipamento) 
+        public void RegistrarEquipamentos(Equipamento equipamento)
         {
             for (int i = 0; i < arrayEquipamentos.Length; i++)
             {
@@ -81,7 +81,6 @@ namespace GestaoEquipamentos.ConsoleApp
                 if (equipamento != null && equipamento.NomeEquipamento.Equals(nomeExcluido))
                 {
                     arrayEquipamentos[i] = null;
-                    //Console.WriteLine("Equipamento excluído com sucesso!");
                 }
             }
         }
